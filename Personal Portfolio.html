@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aditya Kaushik — Full Stack Developer & Designer" />
+  <title>Aditya Kaushik | Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <header class="nav-header" id="nav-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#hero" class="nav__logo">AK<span class="dot">.</span></a>
+      <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#contact" class="btn btn--sm">Hire Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="hero__greeting fade-up">Hello, I'm</p>
+          <h1 class="hero__name fade-up">Aditya<br />Kaushik<span class="dot">.</span></h1>
+          <p class="hero__title fade-up">
+            <span class="typed" id="typed-text"></span><span class="cursor">|</span>
+          </p>
+          <p class="hero__desc fade-up">
+            I craft clean, performant web experiences — from pixel-perfect UIs to
+            scalable back-end systems. Currently open to full-time opportunities.
+          </p>
+          <div class="hero__cta fade-up">
+            <a href="#projects" class="btn btn--primary">View My Work</a>
+            <a href="#contact" class="btn btn--ghost">Get In Touch</a>
+          </div>
+        </div>
+        <div class="hero__visual fade-up" aria-hidden="true">
+          <div class="blob"></div>
+          <div class="avatar-ring">
+            <div class="avatar-placeholder">AK</div>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+        <span class="scroll-indicator__mouse"></span>
+      </a>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="about section" id="about">
+      <div class="container">
+        <h2 class="section__title">About Me</h2>
+        <div class="about__grid">
+          <div class="about__content reveal">
+            <p>
+              I'm a full-stack developer with a passion for building things that live on the internet.
+              I care deeply about writing clean, maintainable code and shipping products that actually
+              solve real problems.
+            </p>
+            <p>
+              When I'm not coding, you'll find me exploring new technologies, contributing to
+              open source, or tinkering with hardware projects. I believe great software is
+              built at the intersection of engineering rigor and design sensibility.
+            </p>
+            <div class="about__stats">
+              <div class="stat">
+                <span class="stat__number" data-target="15">0</span><span class="stat__plus">+</span>
+                <span class="stat__label">Projects</span>
+              </div>
+              <div class="stat">
+                <span class="stat__number" data-target="3">0</span><span class="stat__plus">+</span>
+                <span class="stat__label">Years Exp.</span>
+              </div>
+              <div class="stat">
+                <span class="stat__number" data-target="10">0</span><span class="stat__plus">+</span>
+                <span class="stat__label">Clients</span>
+              </div>
+            </div>
+            <a href="assets/resume.pdf" class="btn btn--primary" download>Download Résumé</a>
+          </div>
+          <div class="about__card reveal">
+            <ul class="info-list">
+              <li><span class="info-list__label">Name</span><span>Aditya Kaushik</span></li>
+              <li><span class="info-list__label">Email</span><a href="mailto:kaushikaditya1609@gmail.com">kaushikaditya1609@gmail.com</a></li>
+              <li><span class="info-list__label">Location</span><span>India</span></li>
+              <li><span class="info-list__label">Availability</span><span class="badge badge--green">Open to work</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section class="skills section section--alt" id="skills">
+      <div class="container">
+        <h2 class="section__title">Skills</h2>
+        <p class="section__sub">Technologies I work with, grouped by domain.</p>
+
+        <div class="skills__grid">
+
+          <div class="skill-card reveal">
+            <div class="skill-card__icon" aria-hidden="true">&#x1F5A5;</div>
+            <h3>Frontend</h3>
+            <ul class="tag-list">
+              <li class="tag">HTML5</li>
+              <li class="tag">CSS3 / SASS</li>
+              <li class="tag">JavaScript (ES6+)</li>
+              <li class="tag">React</li>
+              <li class="tag">Next.js</li>
+              <li class="tag">TypeScript</li>
+              <li class="tag">Tailwind CSS</li>
+            </ul>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-card__icon" aria-hidden="true">&#x2699;&#xFE0F;</div>
+            <h3>Backend</h3>
+            <ul class="tag-list">
+              <li class="tag">Node.js</li>
+              <li class="tag">Express</li>
+              <li class="tag">Python</li>
+              <li class="tag">FastAPI</li>
+              <li class="tag">REST APIs</li>
+              <li class="tag">GraphQL</li>
+            </ul>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-card__icon" aria-hidden="true">&#x1F5C4;</div>
+            <h3>Database & Cloud</h3>
+            <ul class="tag-list">
+              <li class="tag">PostgreSQL</li>
+              <li class="tag">MongoDB</li>
+              <li class="tag">Redis</li>
+              <li class="tag">Firebase</li>
+              <li class="tag">AWS</li>
+              <li class="tag">Docker</li>
+            </ul>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-card__icon" aria-hidden="true">&#x1F6E0;&#xFE0F;</div>
+            <h3>Tools & Practices</h3>
+            <ul class="tag-list">
+              <li class="tag">Git / GitHub</li>
+              <li class="tag">CI/CD</li>
+              <li class="tag">Jest / Pytest</li>
+              <li class="tag">Figma</li>
+              <li class="tag">Linux</li>
+              <li class="tag">Agile / Scrum</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJECTS ===== -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <h2 class="section__title">Projects</h2>
+        <p class="section__sub">A selection of things I've built.</p>
+
+        <div class="projects__grid">
+
+          <article class="project-card reveal">
+            <div class="project-card__header">
+              <span class="project-card__emoji" aria-hidden="true">&#x1F6CD;</span>
+              <div class="project-card__links">
+                <a href="#" aria-label="View source on GitHub" title="GitHub">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.37.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.54-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.82.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+                <a href="#" aria-label="View live demo" title="Live Demo">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-card__title">ShopSmart E-Commerce</h3>
+            <p class="project-card__desc">
+              A full-featured e-commerce platform with cart management, Stripe payments,
+              real-time inventory, and an admin dashboard.
+            </p>
+            <ul class="tag-list">
+              <li class="tag tag--accent">React</li>
+              <li class="tag tag--accent">Node.js</li>
+              <li class="tag tag--accent">PostgreSQL</li>
+              <li class="tag tag--accent">Stripe</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card__header">
+              <span class="project-card__emoji" aria-hidden="true">&#x1F4AC;</span>
+              <div class="project-card__links">
+                <a href="#" aria-label="View source on GitHub" title="GitHub">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.37.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.54-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.82.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+                <a href="#" aria-label="View live demo" title="Live Demo">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-card__title">ChatFlow — Real-time Messenger</h3>
+            <p class="project-card__desc">
+              WebSocket-powered chat app with rooms, direct messages, file sharing,
+              and end-to-end message encryption.
+            </p>
+            <ul class="tag-list">
+              <li class="tag tag--accent">Next.js</li>
+              <li class="tag tag--accent">Socket.io</li>
+              <li class="tag tag--accent">Redis</li>
+              <li class="tag tag--accent">MongoDB</li>
+            </ul>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card__header">
+              <span class="project-card__emoji" aria-hidden="true">&#x1F4CA;</span>
+              <div class="project-card__links">
+                <a href="#" aria-label="View source on GitHub" title="GitHub">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.37.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.54-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.82.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                </a>
+                <a href="#" aria-label="View live demo" title="Live Demo">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-card__title">DataLens — Analytics Dashboard</h3>
+            <p class="project-card__desc">
+              Interactive data visualization platform that ingests CSV/JSON datasets
+              and renders charts, pivot tables, and exportable reports.
+            </p>
+            <ul class="tag-list">
+              <li class="tag tag--accent">Python</li>
+              <li class="tag tag--accent">FastAPI</li>
+              <li class="tag tag--accent">React</li>
+              <li class="tag tag--accent">D3.js</li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="contact section section--alt" id="contact">
+      <div class="container">
+        <h2 class="section__title">Get In Touch</h2>
+        <p class="section__sub">Have a project in mind? Let's talk.</p>
+
+        <div class="contact__grid">
+
+          <form class="contact__form reveal" id="contact-form" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required autocomplete="name" />
+              <span class="form-error" id="name-error" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email" />
+              <span class="form-error" id="email-error" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+              <span class="form-error" id="message-error" role="alert"></span>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+            <p class="form-status" id="form-status" aria-live="polite"></p>
+          </form>
+
+          <div class="contact__info reveal">
+            <p>I'm currently available for freelance work and full-time roles.
+               Feel free to reach out — I'll get back to you within 24 hours.</p>
+
+            <ul class="social-links">
+              <li>
+                <a href="mailto:kaushikaditya1609@gmail.com" class="social-link" aria-label="Email">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  kaushikaditya1609@gmail.com
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/Lucius-Aelius" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.37.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.54-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.14 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.25 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.81 1.1.81 2.22v3.29c0 .32.21.7.82.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+                  github.com/Lucius-Aelius
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/aditya-kaushik-028348395/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45C23.2 24 24 23.23 24 22.27V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+                  linkedin.com/in/aditya-kaushik-028348395/
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Twitter / X">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                  @adityakaushik
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>Designed &amp; built by <strong>Aditya Kaushik</strong></p>
+      <p class="footer__copy">&copy; <span id="year"></span> · All rights reserved</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
